@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h3>Rest Operator</h3>
+        <script>
+            function show(...myargs){
+                console.log("---show()---");
+                console.log("Length: ",myargs.length);
+                for(let myvalue of myargs){
+                    console.log(myvalue);
+                }
+            }
+            show();
+            show(10);
+            show(10,20);
+            show(10,20,30);
+            console.log("Done!!");
+        </script>
+    </body>
+</html>
