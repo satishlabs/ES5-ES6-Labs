@@ -1,0 +1,42 @@
+<html>
+    <header>
+        <title>Demo5</title>
+    </header>
+    <body>
+        <h3>Ways to Access Arrays</h3>
+        <script>
+            let arr = ["Angular","NodeJS","ReactJS","ExpressJS"];
+
+            console.log(arr);
+            console.log("------Regular for---------");
+            for(let i=0; i<arr.length; i++){
+                console.log(i+"."+arr[i]);
+            }
+
+            console.log("-----for in----------"); 
+            for(let index in arr){
+                console.log(index+" "+arr[index]);
+            }
+
+            console.log("-----for of----------"); 
+            for(let value of arr){
+                console.log(value);
+            }
+
+            console.log("------forEach---------");
+            function showArray1(myvalue,myindex){
+                console.log(myindex+" "+myvalue);
+            }
+            arr.forEach(showArray1);
+
+            console.log("---------------"); 
+            function showArray2(myvalue){
+                console.log(myvalue);
+            }
+            arr.forEach(showArray2);
+
+            
+            console.log("Done!");
+        </script>
+    </body>
+</html>
