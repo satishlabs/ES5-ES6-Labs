@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Default Parameters</title>
+    </head>
+    <body>
+        <h3>Default Parameters</h3>
+       <script>
+        function findSum(a,b=10){
+            return a+b;
+        }
+         let result = findSum(10);
+         console.log("Sum1 : "+result);
+
+         result =findSum(10,20);
+         console.log("Sum2 : "+result);
+
+
+         const sum = (a,b = 10) =>{
+            return a+b;
+         }
+         result = sum(10);
+         console.log("Sum3 : "+result);
+
+         result = sum(10,20);
+         console.log("Sum4 : "+result);
+
+         console.log("Done!!!");
+       </script>
+    </body>
+</html>
