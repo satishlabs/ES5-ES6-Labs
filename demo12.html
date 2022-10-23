@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Array - Extensions - 1</title>
+    </head>
+    <body>
+        <h3>Array - Extensions - 1</h3>
+        <script>
+            console.log("Array - Extensions - 1");
+
+            function get(x){
+                return x;
+            }
+
+            function square(x){
+                return x*x;
+            }
+
+            function cube(x){
+                return x*x*x;
+            }
+
+            function cubeString(x){
+                let cube = x * x * x; 
+                 return `Cube of ${x} => ${cube}`;
+            }
+
+            let numArray = [1,2,3,4,5];
+            console.log(numArray);
+
+            let outputArray = numArray.map(get);
+            console.log(outputArray);
+
+            outputArray = numArray.map(square);
+            console.log(outputArray);
+
+            outputArray = numArray.map(cube);
+            console.log(outputArray);
+
+            outputArray = numArray.map(cubeString);
+            console.log(outputArray);
+
+            console.log("-------------------------");
+            outputArray = numArray.map(x => x);
+            console.log(outputArray);
+
+            outputArray = numArray.map(x => x*x);
+            console.log(outputArray);
+
+            outputArray = numArray.map(x => x*x*x);
+            console.log(outputArray);
+
+            outputArr = numArray.map(d => `Cube of ${d} => ${d*d*d}`); 
+            console.log(outputArr)
+
+            console.log("-----------------------------");
+            console.log("Done!!!");
+        </script>
+    </body>
+</html>
