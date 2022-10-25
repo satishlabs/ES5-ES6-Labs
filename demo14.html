@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>Array Extensions - 3</h3>
+        <script>
+            let numArray = [1,2,3,4,5];
+            console.log(numArray);
+            
+            const sumNumbers = (result,value) =>{
+                return result+value;
+            }
+
+            const multiplyNumbers = (result,value) =>{
+                return result*value;
+            }
+
+            let result = numArray.reduce(sumNumbers);
+            console.log(result);
+
+            result = numArray.reduce(multiplyNumbers);
+            console.log(result);
+            console.log("------------------------");
+
+            result = numArray.reduce(sumNumbers,10);
+            console.log(result);
+
+            result = numArray.reduce(multiplyNumbers,10);
+            console.log(result);
+            console.log("------------------------");
+
+            result = numArray.reduceRight(sumNumbers);
+            console.log(result);
+
+            result = numArray.reduceRight(multiplyNumbers);
+            console.log(result);
+            console.log("------------------------");
+
+            console.log("Done!");
+
+
+        </script>
+    </body>
+</html>
