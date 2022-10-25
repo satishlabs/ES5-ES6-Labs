@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>Array Extensions - 2</h3>
+        <script>
+            let numArray = [1,2,3,4,5,6,7];
+            console.log(numArray);
+            function findEven(num){
+                if(num%2 ==0)
+                    return true;
+                else
+                    return false;    
+            }
+
+            function findOdd(num){
+                if(num%2 != 0)
+                    return true;
+                else
+                    return false;    
+            }
+
+            let resultArray = numArray.map(findEven);
+            console.log(resultArray);
+
+            resultArray = numArray.filter(findEven);
+            console.log(resultArray);
+
+            console.log("------------------------");
+
+            resultArray = numArray.map(findOdd);
+            console.log(resultArray);
+            
+            resultArray = numArray.filter(findOdd);
+            console.log(resultArray);
+
+            resultArray = numArray.map(x => x%2 ==0);
+            console.log(resultArray);
+
+            resultArray = numArray.filter(x => x%2 ==0);
+            console.log(resultArray);
+
+            console.log("------------------------");
+            resultArray  = numArray.map(x => x%2 !=0);
+            console.log(resultArray);
+
+            resultArray = numArray.filter(x => x%2 !=0);
+            console.log(resultArray);
+
+        </script>
+    </body>
+</html>
