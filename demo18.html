@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>Array - Extensions</h3>
+        <script>
+            let myarray = [10,20,30,40,50];
+
+            //try these numbers one by one
+            let searchNum = 20;
+            //let searchNum = 30;
+            //let searchNum = 99;
+
+            result = myarray.find((element) =>{
+                if(element == searchNum){
+                    return true;
+                }else{
+                    return false;
+                }
+            });
+            console.log(result);
+
+            myindex = myarray.findIndex((element) => { 
+            if (element == searchNum) { 
+            return true; 
+            } else { 
+            return false; 
+            } 
+            }); 
+            console.log(myindex) 
+            console.log("Done!!!"); 
+        </script>
+    </body>
+</html>
