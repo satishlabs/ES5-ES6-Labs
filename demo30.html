@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>classes and Objects</title>
+</head>
+<body>
+    <h3> Classes and Objects - 1 </h3>
+    <script>
+    class Customer{
+      //Instance variables
+      cid=101;
+      cname="Satish";
+      email="satish@gmail.com"
+
+      //Constructor
+      constructor(){
+         console.log("I am 0-arg cons..");
+      }
+
+      //Instance Method
+      showCusomter =() =>{
+         console.log("showCustomer");
+         let sid=111111;
+         console.log(this.sid);
+         console.log(this.cname);
+         console.log(this.email);
+      }
+    }
+
+    let c1 = new Customer();
+    c1.showCusomter();
+
+    let c2 = new Customer();
+    c2.showCusomter();
+
+     console.log("Done!!!"); 
+   
+    </script>
+</body>
+</html>
