@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>classes and Objects</title>
+</head>
+<body>
+    <h3> Classes and Objects - 3 </h3>
+    <script>
+      class Customer{
+         constructor(){
+            console.log("I am DC");
+            this.cid=0;
+            this.cname=null;
+            this.phone=0;
+         }
+
+         showCustomer =() =>{
+            console.log("showCustomer");
+            console.log(this.cid);
+            console.log(this.cname);
+            console.log(this.phone);
+         }
+
+         get customerId(){
+            return this.cid;
+         }
+         get customerName(){
+            return this.cname;
+         }
+         get customerPhone(){
+            return this.phone;
+         }
+         set customerId(cid){
+            this.cid = cid;
+         }
+         set customerName(cname){
+            this.cname = cname;
+         }
+         set customerPhone(phone){
+            this.phone = phone;
+         }
+      }
+
+      let mycust = new Customer();
+      mycust.showCustomer();
+      console.log("----way to access Properties----");
+      console.log(mycust.cid);
+      console.log(mycust.cname);
+      console.log(mycust.phone);
+    console.log("------------------------------");
+   
+      console.log("----way to access getters----");
+      console.log(mycust.customerId);
+      console.log(mycust.customerName);
+      console.log(mycust.customerPhone);
+    console.log("------------------------------");
+
+    console.log("----way to access setters----");
+      mycust.customerId = 101;
+      mycust.customerName = "Satish";
+      mycust.customerPhone = 12345;
+
+      console.log("----way to access getters----");
+
+      console.log(mycust.customerId);
+      console.log(mycust.customerName);
+      console.log(mycust.customerPhone);
+    console.log("------------------------------");
+    console.log("---calling showCustomer()---"); 
+    mycust.showCustomer(); 
+    console.log("------------------------------");
+
+     console.log("Done!!!"); 
+   
+    </script>
+</body>
+</html>
