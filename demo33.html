@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>classes and Objects</title>
+</head>
+<body>
+    <h3> Classes and Objects - 4 </h3>
+    <script>
+      class Hello{
+         a=10;
+         static b=20;
+         constructor(){
+            console.log("I am D.C");
+            this.c=30;
+         }
+
+         showHello=()=>{
+            console.log("showHello");
+            console.log("a =: ",this.a);
+            console.log("b =: ",this.b);
+            console.log("b =: ",Hello.b);
+            console.log("c =: ",this.c);
+         }
+         static myShow(){
+            console.log("I am static method - myshow()");
+            console.log("a =: ",this.a);
+            console.log("b =: ",this.b);
+            console.log("b =: ",Hello.b);
+            console.log("c =: ",this.c);
+         }
+      }
+
+      let hello = new Hello();
+      console.log("-----Calling showHello()----");
+      hello.showHello();
+      console.log("-----way to call propertoes----");
+      console.log("a =: ",hello.a);
+      console.log("b =: ",hello.b);
+      console.log("b =: ",Hello.b);
+      console.log("c =: ",hello.c);
+      console.log("-----calling static methods()----");
+     // hello.myShow(); //Uncaught TypeError: hello.myShow is not a function
+     Hello.myShow();
+    console.log("------------------------------");
+
+     console.log("Done!!!"); 
+   
+    </script>
+</body>
+</html>
